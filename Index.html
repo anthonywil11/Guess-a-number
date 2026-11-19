@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess The Number | JS Challenge 03</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <main class="game-card">
+
+    <header class="header">
+      <h1>Guess The Number</h1>
+      <span class="badge">JS Challenge 03</span>
+    </header>
+
+    <section class="number-display">
+      <div class="question-mark">?</div>
+      <h2>1 — 100</h2>
+      <p>Estoy pensando en un número...</p>
+    </section>
+
+    <section class="attempts-section">
+      <div class="attempts-header">
+        <span>Intentos restantes</span>
+        <strong id="attempts-left">7 / 7</strong>
+      </div>
+
+      <div id="progress-bar" class="progress-bar">
+        <span></span>
+      </div>
+    </section>
+
+    <form id="guess-form" class="guess-form">
+      <label for="guess-input">Tu respuesta</label>
+
+      <input
+        id="guess-input"
+        type="number"
+        placeholder="Número del 1 al 100"
+        min="1"
+        max="100"
+        step="1"
+        autocomplete="off"
+      >
+
+      <button id="check-btn" type="submit">
+        Comprobar número
+      </button>
+    </form>
+
+    <div id="feedback" class="feedback">
+      Introduce un número para comenzar.
+    </div>
+
+    <section class="history-section">
+      <h3>Historial de intentos</h3>
+
+      <ul id="history-list" class="history-list">
+        <li class="empty-history">
+          Todavía no has intentado ningún número.
+        </li>
+      </ul>
+    </section>
+
+    <button id="restart-btn" class="restart-btn">
+      ↻ Nueva partida
+    </button>
+
+    <footer>
+      Made with HTML, CSS & JavaScript
+    </footer>
+
+  </main>
+
+</body>
+</html>
